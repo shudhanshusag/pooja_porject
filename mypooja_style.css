@@ -1,0 +1,772 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    background-color: beige;
+    display:grid;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.container{
+    background-color: cadetblue;
+    padding: 20px;
+    box-shadow: 10px 10px rgba(0, 0, 0, .5);
+    border-radius: 30px;
+    width: 95%;
+    text-align: center;
+}
+
+.menu{
+    background-color: darkslategrey;
+    box-shadow: 10px 10px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+.background{
+    height: 900px;
+    width: 100%;
+    background-image: url('images/background2.jpg');
+    background-size: cover;
+}
+
+.announcement_bar{
+    color: rgb(var(--darkreader-text--color-foreground, 24, 26, 27));
+    border-bottom: .1rem solid rgba(var(--darkreader-border--color-foreground), .08);
+    background-color: rgb(215, 78, 132) !important;
+}
+
+.announcement_bar_msg{
+    text-align: center;
+    padding: .8rem 1rem;
+    margin: 0;
+    letter-spacing: .1rem;
+    font-size: 13px;
+    color: #f8f8f8;
+    line-height: .75;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eae7e0;
+    padding: 10px 12px;
+    position: relative;
+}
+
+.logo img {
+    width: 80px;
+    height: 70px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.arrow_down{
+    border: #333;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.nav-menu li a {
+    color: #565656;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav-menu li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #eae7e0;
+    display: none;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.sub-menu li a {
+    padding: 10px 20px;
+}
+
+.sub-menu li a:hover {
+    background-color: #555;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    justify-content:end
+}
+
+.icons a {
+    color: #383737;
+    text-decoration: none;
+    font-size: 18px;
+
+    padding: 10px;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu li {
+        text-align: center;
+    }
+
+    .sub-menu {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    nav.open {
+        display: flex;
+    }
+}
+
+.social-icons{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.social-icons a{
+    font-size: 30px;
+    padding-inline-end: 40px;
+    padding-top: 20px;
+    color:darkslategrey;
+    
+}
+
+.social-icons a:hover{
+    color: black;
+    font-size: 36px;
+}
+
+
+
+
+.description{
+    background-color: rgba(27, 27, 28, 0.4);
+    color: aliceblue;
+    height: 30%;
+    width: fit-content;
+    margin-top: 20px;
+    margin-right: 750px;
+    margin-left: 12px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+}
+
+.slogan{
+    color: aliceblue;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bolder;
+    
+}
+
+.slogan2{
+    color:brown;
+    margin-left: 20px;
+    margin-top: 2px;
+    font-size: 31px;
+    font-weight: bolder;
+}
+
+.booktable button{
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color:brown;
+    font-weight: bold;
+    color: aliceblue;
+    height: 60px;
+    width: 180px;
+    text-align: center;
+    text-decoration: solid;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(0, 0, 0, .3);
+
+}
+
+.booktable button:hover{
+    background-color: aliceblue;
+    color: brown;
+}
+
+.About{
+    background-color: rgb(49, 45, 45);
+    color: aliceblue;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about_us{
+    margin-left: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 30%;
+    margin-right: 150px;
+    font-size: 16px;
+}
+
+.quick_links{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 150px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.links{
+    display: grid;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.links a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.social-handles{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: 50px;
+}
+
+.social-handles a{
+    font-size: 30px;
+    padding-inline-end: 40px;
+    padding-bottom: 50px;
+    
+}
+
+.social-handles a:hover{
+    color: black;
+    font-size: 36px;
+}
+
+.endtext{
+    background-color: rgb(49, 45, 45);
+    color: aliceblue;
+    text-align: center;
+}
+
+.endtext h4{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.value{
+    width: 70%;
+    height: 50px;
+    padding: 10px;
+}
+
+.rounded_cards_background{
+    background-color:#f8f9fa;
+    display: flex;
+    padding: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.card_units{
+    padding-left: 75px;
+    padding-right: 40px;
+    display: grid;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+}
+
+.Urlis p{
+    margin-top: 1px;
+}
+
+
+.Urlis_btn{
+    width: 120px;
+    height: 120px;
+    background-image: url(images/bestseller1.jpg);
+    border-radius: 120px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;   
+}
+
+.bestbtn:hover{
+    border-radius: 100px;
+    background-position: center;
+    background-size: cover;
+    border-color:brown;
+    border-style:groove;
+    border-width: 3px;
+    cursor: pointer;
+    
+}
+
+.drinks{
+    padding-left: 50px;
+    padding-right: 70px;
+    display: grid;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+}
+
+.drinksbtn{
+    width: 150px;
+    height: 150px;
+    background-image: url(images/drinks4.jpg);
+    border-radius: 150px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;   
+}
+
+.drinksbtn:hover{
+    border-radius: 100px;
+    background-position: center;
+    background-size: cover;
+    border-color:brown;
+    border-style:groove;
+    border-width: 3px;
+    cursor: pointer;
+    
+}
+
+.food{
+    padding-left: 50px;
+    padding-right: 70px;
+    display: grid;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+}
+
+.foodbtn{
+    width: 150px;
+    height: 150px;
+    background-image: url(images/food1.jpg);
+    border-radius: 150px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;   
+}
+
+.foodbtn:hover{
+    border-radius: 100px;
+    background-position: center;
+    background-size: cover;
+    border-color:brown;
+    border-style:groove;
+    border-width: 3px;
+    cursor: pointer;
+    
+}
+
+.brownies{
+    padding-left: 50px;
+    padding-right: 70px;
+    display: grid;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+}
+
+.browniesbtn{
+    width: 150px;
+    height: 150px;
+    background-image: url(images/brownie3.jpg);
+    border-radius: 150px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;   
+}
+
+.browniesbtn:hover{
+    border-radius: 100px;
+    background-position: center;
+    background-size: cover;
+    border-color:brown;
+    border-style:groove;
+    border-width: 3px;
+    cursor: pointer;
+    
+}
+
+.ready_to_eat{
+    padding-left: 50px;
+    padding-right: 40px;
+    display: grid;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+}
+
+.ready_to_eatbtn{
+    width: 150px;
+    height: 150px;
+    background-image: url(images/chocolate2.jpg);
+    border-radius: 150px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;   
+}
+
+.ready_to_eatbtn:hover{
+    border-radius: 100px;
+    background-position: center;
+    background-size: cover;
+    border-color:brown;
+    border-style:groove;
+    border-width: 3px;
+    cursor: pointer;
+    
+}
+
+
+
+.top_recommends{
+    font-size: 23px;
+    padding-left: 44px;
+    background-image: url(images/recommendsbg1.jpg);
+    background-size: cover;
+    display:grid;
+    height: max-content;
+    width: fit-content;
+}
+
+.recommendsheading{
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.recommendsmenu1{
+    display: flex;
+    padding-bottom: 20px;
+    padding-right: 155px;
+}
+
+.recommendsmenu2{
+    display: flex;
+    padding-bottom: 30px;
+    padding-right: 155px;
+}
+
+
+
+.card{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:#f8f9fa;
+    margin-right: 40px;
+    margin-left: 50px;
+    margin-bottom: 22px;
+    height:fit-content;
+    width: 350px;
+    display: flex;
+    border-radius: 12px;
+    box-shadow: 10px 10px rgba(0, 0, 0, .5);
+
+}
+
+.strawberryimageandprice{
+    display: grid;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-left: 11px;
+    margin-right: 1px;
+}
+
+.strawberrycontents{
+    display: grid;
+    margin-top: 9px;
+    margin-bottom: 11px;
+    margin-left: 6px;
+    margin-right: 1px;
+    
+}
+
+.strawberrycontents h6{
+    margin-block-start: 0.33em;
+    margin-block-end: 1.33em;
+}
+
+.strawberrycontents button{
+    padding: 10px;
+    margin-right: 12px;
+    border-radius: 8px;
+    background-color: brown;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+.strawberrycontents button:hover{
+    background-color: rgb(50, 37, 37);
+}
+
+
+
+.vanillaimageandprice{
+    display: grid;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-left: 11px;
+    margin-right: 1px;
+}
+
+.vanillacontents{
+    display: grid;
+    margin-top: 9px;
+    margin-bottom: 11px;
+    margin-left: 6px;
+    margin-right: 1px;
+    
+}
+
+.vanillacontents h6{
+    margin-block-start: 0.33em;
+    margin-block-end: 1.33em;
+}
+
+.vanillacontents button{
+    padding: 10px;
+    margin-right: 12px;
+    border-radius: 8px;
+    background-color: brown;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+.vanillacontents button:hover{
+    background-color: rgb(50, 37, 37);
+}
+
+
+
+.coldcoffeeimageandprice{
+    display: grid;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-left: 11px;
+    margin-right: 1px;
+}
+
+.coldcoffeecontents{
+    display: grid;
+    margin-top: 9px;
+    margin-bottom: 11px;
+    margin-left: 6px;
+    margin-right: 1px;
+    
+}
+
+.coldcoffeecontents h6{
+    margin-block-start: 0.33em;
+    margin-block-end: 1.33em;
+}
+
+.coldcoffeecontents button{
+    padding: 10px;
+    margin-right: 12px;
+    border-radius: 8px;
+    background-color: brown;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+.coldcoffeecontents button:hover{
+    background-color: rgb(50, 37, 37);
+}
+
+
+
+
+.cappucinoimageandprice{
+    display: grid;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-left: 11px;
+    margin-right: 1px;
+}
+
+.cappucinocontents{
+    display: grid;
+    margin-top: 9px;
+    margin-bottom: 11px;
+    margin-left: 6px;
+    margin-right: 1px;
+    
+}
+
+.cappucinocontents h6{
+    margin-block-start: 0.33em;
+    margin-block-end: 1.33em;
+}
+
+.cappucinocontents button{
+    padding: 10px;
+    margin-right: 12px;
+    border-radius: 8px;
+    background-color: brown;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+.cappucinocontents button:hover{
+    background-color: rgb(50, 37, 37);
+}
+
+
+
+.pastaimageandprice{
+    display: grid;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-left: 11px;
+    margin-right: 1px;
+}
+
+.pastacontents{
+    display: grid;
+    margin-top: 9px;
+    margin-bottom: 11px;
+    margin-left: 6px;
+    margin-right: 1px;
+    
+}
+
+.pastacontents h6{
+    margin-block-start: 0.33em;
+    margin-block-end: 1.33em;
+}
+
+.pastacontents button{
+    padding: 10px;
+    margin-right: 12px;
+    border-radius: 8px;
+    background-color: brown;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+.pastacontents button:hover{
+    background-color: rgb(50, 37, 37);
+}
+
+
+
+.sandwichimageandprice{
+    display: grid;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-left: 11px;
+    margin-right: 1px;
+}
+
+.sandwichcontents{
+    display: grid;
+    margin-top: 9px;
+    margin-bottom: 11px;
+    margin-left: 6px;
+    margin-right: 1px;
+    
+}
+
+.sandwichcontents h6{
+    margin-block-start: 0.33em;
+    margin-block-end: 1.33em;
+}
+
+.sandwichcontents button{
+    padding: 10px;
+    margin-right: 12px;
+    border-radius: 8px;
+    background-color: brown;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+.sandwichcontents button:hover{
+    background-color: rgb(50, 37, 37);
+}
+
+
+
+
